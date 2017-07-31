@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRunConfiguration name="Local Test Run" id="55444ace-7b63-4b45-a2d9-b398af7f5610" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>This is a default test run configuration for a local test run.</Description>
+  <CodeCoverage enabled="true">
+    <Regular>
+      <CodeCoverageItem binaryFile="FileGenerator.Tests\bin\Debug\FileGenerator.Tests.dll" pdbFile="FileGenerator.Tests\bin\Debug\FileGenerator.Tests.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="FileGenerator\bin\Debug\FileGenerator.dll" pdbFile="FileGenerator\bin\Debug\FileGenerator.pdb" instrumentInPlace="true" />
+    </Regular>
+  </CodeCoverage>
+  <TestTypeSpecific />
+</TestRunConfiguration>

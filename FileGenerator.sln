@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGenerator", "FileGenerator\FileGenerator.csproj", "{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGenerator.Tests", "FileGenerator.Tests\FileGenerator.Tests.csproj", "{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C17C53D2-F3F0-4919-BAD5-7677F3E49115}"
+	ProjectSection(SolutionItems) = preProject
+		FileGenerator.vsmdi = FileGenerator.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Spackle.dll = Spackle.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGenerator.Tests.Target", "FileGenerator.Tests.Target\FileGenerator.Tests.Target.csproj", "{F43DB452-CC13-479D-9CF3-78977DE8F547}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs06.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FileGenerator\\FileGenerator.csproj
+		SccProjectName1 = FileGenerator
+		SccLocalPath1 = FileGenerator
+		SccProjectUniqueName2 = FileGenerator.Tests\\FileGenerator.Tests.csproj
+		SccProjectName2 = FileGenerator.Tests
+		SccLocalPath2 = FileGenerator.Tests
+		SccProjectUniqueName3 = FileGenerator.Tests.Target\\FileGenerator.Tests.Target.csproj
+		SccProjectName3 = FileGenerator.Tests.Target
+		SccLocalPath3 = FileGenerator.Tests.Target
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = FileGenerator.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43DB452-CC13-479D-9CF3-78977DE8F547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43DB452-CC13-479D-9CF3-78977DE8F547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43DB452-CC13-479D-9CF3-78977DE8F547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43DB452-CC13-479D-9CF3-78977DE8F547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

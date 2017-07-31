@@ -1,0 +1,97 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A2DD89D-EF21-4CD0-9EF0-9B4C4A50D8A1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FileGenerator.Tests</RootNamespace>
+    <AssemblyName>FileGenerator.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Reflector, Version=5.0.0.0, Culture=neutral, PublicKeyToken=18ca6bb8dd6a03c3">
+      <SpecificVersion>False</SpecificVersion>
+      <ExecutableExtension>.exe</ExecutableExtension>
+      <HintPath>..\Reflector.exe</HintPath>
+    </Reference>
+    <Reference Include="Spackle, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Spackle.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddIn\Generators\AssemblyFileGeneratorTests.cs" />
+    <Compile Include="AddIn\Generators\FileGeneratorContextTests.cs" />
+    <Compile Include="AddIn\Generators\FileGeneratorFactoryTests.cs" />
+    <Compile Include="AddIn\Generators\LanguageInformation.cs" />
+    <Compile Include="AddIn\Generators\MockAssembly.cs" />
+    <Compile Include="AddIn\Generators\MockLanguage.cs" />
+    <Compile Include="AddIn\Generators\MockModule.cs" />
+    <Compile Include="AddIn\Generators\MockModuleCollection.cs" />
+    <Compile Include="AddIn\Generators\MockNamespace.cs" />
+    <Compile Include="AddIn\Generators\MockTranslator.cs" />
+    <Compile Include="AddIn\Generators\MockTypeDeclaration.cs" />
+    <Compile Include="AddIn\Generators\MockTypeDeclarationCollection.cs" />
+    <Compile Include="AddIn\Generators\ModuleFileGeneratorTests.cs" />
+    <Compile Include="AddIn\Generators\NamespaceFileGeneratorTests.cs" />
+    <Compile Include="AddIn\Generators\TypeFileGeneratorTests.cs" />
+    <Compile Include="AddIn\TextFormatterTests.cs" />
+    <Compile Include="AssemblyTests.cs" />
+    <Compile Include="AddIn\FileGeneratedEventArgsTests.cs" />
+    <Compile Include="AddIn\LanguageWriterConfigurationTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StressTests.cs" />
+    <Compile Include="TestContextExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileGenerator.Tests.Target\FileGenerator.Tests.Target.csproj">
+      <Project>{F43DB452-CC13-479D-9CF3-78977DE8F547}</Project>
+      <Name>FileGenerator.Tests.Target</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileGenerator\FileGenerator.csproj">
+      <Project>{B1C045CC-A020-4DB2-8C42-5E03AA9742D7}</Project>
+      <Name>FileGenerator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
